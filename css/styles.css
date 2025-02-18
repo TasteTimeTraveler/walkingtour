@@ -114,3 +114,15 @@ nav ul li a {
 .tour .btn:hover {
     background: #FF9800;
 }
+
+/* Animación de entrada */
+.tour {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.tour.show {
+    opacity: 1;
+    transform: translateY(0);
+}
