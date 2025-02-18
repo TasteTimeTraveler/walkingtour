@@ -1,0 +1,56 @@
+.partners-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.partners-container h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #ff5722;
+}
+
+.partners-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Diseño de la cuadrícula de partners */
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.partner {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.partner img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.partner h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.partner p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Efecto hover */
+.partner:hover {
+    transform: scale(1.05);
+}
