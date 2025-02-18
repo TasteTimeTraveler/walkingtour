@@ -59,3 +59,28 @@
 .tour .btn:hover {
     background: #FF9800;
 }
+
+
+/* Animación de entrada */
+.tour {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.tour.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animación Fade In */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
