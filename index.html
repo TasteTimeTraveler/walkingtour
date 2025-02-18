@@ -3,32 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Walking Tours CDMX| Taste & Time Traveler</title> 
+    <title  id="homeTitle">Walking Tours CDMX| Taste & Time Traveler</title> 
     <link rel="icon" href="assets/logo/logo.jpg">
     <link rel="stylesheet" href="css/styles.css">
+    <script defer src="lang.js"></script>
 </head>
 <body>
     <!-- Menú de navegación -->
     <header>
         <nav>
-            <h1>Walking Tours CDMX</h1>
+            <h1 id="siteTitle">Walking Tours CDMX</h1>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="tours.html">Tours</a></li>
-                <li><a href="gallery.html">Galería</a></li>
-                <li><a href="reviews.html">Reseñas</a></li>
-                <li><a href="partners.html">Empresas</a></li>
-                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="index.html" id="menuHome">Inicio</a></li>
+                <li><a href="tours.html" id="menuTours">Tours</a></li>
+                <li><a href="gallery.html" id="menuGallery">Galería</a></li>
+                <li><a href="reviews.html" id="menuReviews">Reseñas</a></li>
+                <li><a href="partners.html" id="menuPartners">Empresas</a></li>
+                <li><a href="contact.html" id="menuContact">Contacto</a></li>
             </ul>
+
+             <!-- Selector de idioma -->
+             <select id="languageSelector">
+                <option value="es">🇲🇽 Español</option>
+                <option value="en">🇺🇸 English</option>
+            </select>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h2>The Best Walking Tours in Mexico City</h2>
-        <p>Explora la historia, cultura y gastronomía de la CDMX con nuestros tours guiados.</p>
-        <a href="tours.html" class="btn">Ver Tours</a>
+        <h2 id="heroTitle">The Best Walking Tours in Mexico City</h2>
+        <p id="heroDescription">Explora la historia, cultura y gastronomía de la CDMX con nuestros tours guiados.</p>
+        <a href="tours.html" class="btn" id="heroButton">Ver Tours</a>
     </section>
+<!-- Sección Destacados -->
+<section class="highlights">
+    <h2 id="highlightsTitle">Tours destacados</h2>
+    <div class="highlight-card">
+        <h3 id="highlight1Title">Centro Histórico y Comida Mexicana</h3>
+        <p id="highlight1Description">Explora el corazón de la ciudad y prueba delicias tradicionales.</p>
+    </div>
+    <div class="highlight-card">
+        <h3 id="highlight2Title">Xochimilco y Coyoacán</h3>
+        <p id="highlight2Description">Un recorrido colorido por los canales y las calles bohemias.</p>
+    </div>
+</section>
+</main>
+
+<footer>
+<p id="footerText">&copy; 2025 Walking Tours CDMX</p>
+</footer>
 
     <script src="js/main.js"></script>
 </body>

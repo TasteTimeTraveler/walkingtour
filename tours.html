@@ -3,30 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tours | Walking Tours CDMX</title>
+    <title id="toursTitle">Tours | Walking Tours CDMX</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script defer src="lang.js"></script>
+    <script defer src="tours.js"></script>
 </head>
 <body>
 
     <!-- Menú de navegación -->
     <header>
         <nav>
-            <h1>Walking Tours CDMX</h1>
+            <h1 id="siteTitle">Walking Tours CDMX</h1>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="tours.html">Tours</a></li>
-                <li><a href="gallery.html">Galería</a></li>
-                <li><a href="reviews.html">Reseñas</a></li>
-                <li><a href="partners.html">Empresas</a></li>
-                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="index.html" id="menuHome">Inicio</a></li>
+                <li><a href="tours.html" id="menuTours">Tours</a></li>
+                <li><a href="gallery.html" id="menuGallery">Galería</a></li>
+                <li><a href="reviews.html" id="menuReviews">Reseñas</a></li>
+                <li><a href="partners.html" id="menuPartners">Empresas</a></li>
+                <li><a href="contact.html" id="menuContact">Contacto</a></li>
             </ul>
+            
+            <!-- Selector de idioma -->
+            <select id="languageSelector">
+                <option value="es">🇲🇽 Español</option>
+                <option value="en">🇺🇸 English</option>
+            </select>
         </nav>
     </header>
 
+    <!-- Sección de tours -->
     <main>
-        <h2>Explora Nuestros Tours</h2>
-        <div class="tours-list"></div> <!-- Aquí se insertarán las tarjetas dinámicamente -->
+        <h2 id="toursTitle">Explora Nuestros Tours</h2>
+        <p id="toursDescription">Elige tu experiencia y explora la Ciudad de México con guías locales.</p>
+        <div   id="toursContainer" class="tours-list"></div> <!-- Aquí se insertarán las tarjetas dinámicamente -->
     </main>
+    <footer>
+        <p>&copy; 2025 Walking Tours CDMX</p>
+    </footer>
 
     <script src="js/tours.js"></script>
 </body>

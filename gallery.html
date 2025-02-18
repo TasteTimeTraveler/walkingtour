@@ -13,17 +13,24 @@
     <!-- Menú de navegación -->
     <header>
         <nav>
-            <h1>Walking Tours CDMX</h1>
+            <h1 id="siteTitle">Walking Tours CDMX</h1>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="tours.html">Tours</a></li>
-                <li><a href="gallery.html">Galería</a></li>
-                <li><a href="reviews.html">Reseñas</a></li>
-                <li><a href="partners.html">Empresas</a></li>
-                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="index.html" id="menuHome">Inicio</a></li>
+                <li><a href="tours.html" id="menuTours">Tours</a></li>
+                <li><a href="gallery.html" id="menuGallery">Galería</a></li>
+                <li><a href="reviews.html" id="menuReviews">Reseñas</a></li>
+                <li><a href="partners.html" id="menuPartners">Empresas</a></li>
+                <li><a href="contact.html" id="menuContact">Contacto</a></li>
             </ul>
+            
+            <!-- Selector de idioma -->
+            <select id="languageSelector">
+                <option value="es">🇲🇽 Español</option>
+                <option value="en">🇺🇸 English</option>
+            </select>
         </nav>
     </header>
+
 
     <section class="gallery-container">
         <h2>Explora nuestra galería</h2>

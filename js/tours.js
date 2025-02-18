@@ -1,20 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const toursContainer = document.querySelector(".tours-list");
-
-    // Cargar datos desde JSON
+document.addEventListener("DOMContentLoaded", function () {
     fetch("data/tours.json")
         .then(response => response.json())
-        .then(tours => {
-            tours.forEach(tour => {
+        .then(data => {
+            const toursContainer = document.getElementById("toursContainer");
+
+            data.tours.forEach(tour => {
                 const tourCard = document.createElement("div");
                 tourCard.classList.add("tour-card");
+
                 tourCard.innerHTML = `
-                    <img src="${tour.image}" alt="${tour.name}">
-                    <h3>${tour.name}</h3>
-                    <p>${tour.description}</p>
-                    <span class="price">${tour.price}</span>
-                    <a href="detalle.html?tour=${encodeURIComponent(tour.name)}" class="btn">Más detalles</a>
+                    <img src="${tour.image}" alt="${tour.title}">
+                    <h3>${tour.title}</h3>
+                    <p><strong id="tourPrice">Precio:</strong> ${tour.price}</p>
+                    <button class="details-btn" id="tourButton">Más detalles</button>
                 `;
+
                 toursContainer.appendChild(tourCard);
             });
         })

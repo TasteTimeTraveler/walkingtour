@@ -1,0 +1,69 @@
+{
+    "es": {
+        "title": "Bienvenidos a Walking Tours CDMX",
+        "description": "Explora la Ciudad de México con guías expertos.",
+        "buttonTours": "Ver Tours",
+        "buttonContact": "Contáctanos",
+        "menuHome": "Inicio",
+        "menuTours": "Tours",
+        "menuGallery": "Galería",
+        "menuReviews": "Reseñas",
+        "menuPartners": "Empresas",
+        "menuContact": "Contacto",
+
+        "toursTitle": "Nuestros Tours",
+        "toursDescription": "Elige tu experiencia y explora la Ciudad de México con guías locales.",
+        "tourPrice": "Precio",
+        "tourButton": "Más detalles",
+
+        "galleryTitle": "Galería de Experiencias",
+        "galleryDescription": "Descubre los momentos más emocionantes de nuestros tours.",
+        
+        "reviewsTitle": "Reseñas de Nuestros Clientes",
+        "reviewsDescription": "Lo que dicen nuestros clientes sobre nuestros tours.",
+        
+        "partnersTitle": "Empresas con las que trabajamos",
+        "partnersDescription": "Colaboramos con empresas líderes en el sector turístico.",
+        
+        "contactTitle": "Contáctanos",
+        "contactDescription": "Envíanos un mensaje o reserva tu tour.",
+        "contactName": "Nombre",
+        "contactEmail": "Correo Electrónico",
+        "contactMessage": "Mensaje",
+        "contactButton": "Enviar"
+    },
+    
+    "en": {
+        "title": "Welcome to Walking Tours CDMX",
+        "description": "Explore Mexico City with expert guides.",
+        "buttonTours": "View Tours",
+        "buttonContact": "Contact Us",
+        "menuHome": "Home",
+        "menuTours": "Tours",
+        "menuGallery": "Gallery",
+        "menuReviews": "Reviews",
+        "menuPartners": "Partners",
+        "menuContact": "Contact",
+
+        "toursTitle": "Our Tours",
+        "toursDescription": "Choose your experience and explore Mexico City with local guides.",
+        "tourPrice": "Price",
+        "tourButton": "More details",
+
+        "galleryTitle": "Experience Gallery",
+        "galleryDescription": "Discover the most exciting moments from our tours.",
+        
+        "reviewsTitle": "Customer Reviews",
+        "reviewsDescription": "What our customers say about our tours.",
+        
+        "partnersTitle": "Companies We Work With",
+        "partnersDescription": "We collaborate with leading companies in the tourism industry.",
+        
+        "contactTitle": "Contact Us",
+        "contactDescription": "Send us a message or book your tour.",
+        "contactName": "Name",
+        "contactEmail": "Email",
+        "contactMessage": "Message",
+        "contactButton": "Send"
+    }
+}
