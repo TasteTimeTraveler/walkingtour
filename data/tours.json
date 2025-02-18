@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Tour por el Centro Histórico",
+        "description": "Explora los edificios más emblemáticos del corazón de la ciudad y su gastronomía.",
+        "image": "img/tour1.jpg",
+        "price": "950 MXN"
+    },
+    {
+        "name": "Tour por Chapultepec",
+        "description": "Visita el castillo, el bosque y descubre su historia en un recorrido inolvidable.",
+        "image": "img/tour2.jpg",
+        "price": "1,100 MXN"
+    },
+    {
+        "name": "Tour a la Basílica de Guadalupe",
+        "description": "Un recorrido cultural y religioso para conocer uno de los santuarios más visitados del mundo.",
+        "image": "img/tour3.jpg",
+        "price": "850 MXN"
+    },
+    {
+        "name": "Tour a Tepotzotlán",
+        "description": "Escapa de la ciudad y conoce este mágico pueblo con su impresionante convento.",
+        "image": "img/tour4.jpg",
+        "price": "1,200 MXN"
+    }
+]

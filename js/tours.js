@@ -1,19 +1,22 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const tours = document.querySelectorAll(".tour");
+document.addEventListener("DOMContentLoaded", () => {
+    const toursContainer = document.querySelector(".tours-list");
 
-    const observer = new IntersectionObserver(
-        (entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("show");
-                    observer.unobserve(entry.target); // Evita que se repita la animación
-                }
+    // Cargar datos desde JSON
+    fetch("data/tours.json")
+        .then(response => response.json())
+        .then(tours => {
+            tours.forEach(tour => {
+                const tourCard = document.createElement("div");
+                tourCard.classList.add("tour-card");
+                tourCard.innerHTML = `
+                    <img src="${tour.image}" alt="${tour.name}">
+                    <h3>${tour.name}</h3>
+                    <p>${tour.description}</p>
+                    <span class="price">${tour.price}</span>
+                    <a href="detalle.html?tour=${encodeURIComponent(tour.name)}" class="btn">Más detalles</a>
+                `;
+                toursContainer.appendChild(tourCard);
             });
-        },
-        { threshold: 0.3 }
-    );
-
-    tours.forEach(tour => {
-        observer.observe(tour);
-    });
+        })
+        .catch(error => console.error("Error al cargar los tours:", error));
 });
