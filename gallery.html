@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería - Walking Tours CDMX</title>
+    <title id="pageTitle">Galería - Walking Tours CDMX</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/gallery.css">
     <script defer src="js/gallery.js"></script>
 </head>
 <body>
-
-    <!-- Menú de navegación -->
     <header>
         <nav>
             <h1 id="siteTitle">Walking Tours CDMX</h1>
@@ -22,8 +20,6 @@
                 <li><a href="partners.html" id="menuPartners">Empresas</a></li>
                 <li><a href="contact.html" id="menuContact">Contacto</a></li>
             </ul>
-            
-            <!-- Selector de idioma -->
             <select id="languageSelector">
                 <option value="es">🇲🇽 Español</option>
                 <option value="en">🇺🇸 English</option>
@@ -31,36 +27,35 @@
         </nav>
     </header>
 
-
     <section class="gallery-container">
-        <h2>Explora nuestra galería</h2>
-        <p>Revive la experiencia de nuestros tours en Ciudad de México a través de estas imágenes.</p>
+        <h2 id="galleryTitle">Explora nuestra galería</h2>
+        <p id="galleryDescription">Revive la experiencia de nuestros tours en Ciudad de México a través de estas imágenes.</p>
 
         <div class="gallery">
             <div class="gallery-item">
-                <img src="img/tour1.jpg" alt="Tour en el centro histórico">
+                <img src="img/tour1.jpg" alt="Tour en el centro histórico" id="imgTour1">
             </div>
             <div class="gallery-item">
-                <img src="img/tour2.jpg" alt="Grupo disfrutando del tour">
+                <img src="img/tour2.jpg" alt="Grupo disfrutando del tour" id="imgTour2">
             </div>
             <div class="gallery-item">
-                <img src="img/tour3.jpg" alt="Recorrido gastronómico">
+                <img src="img/tour3.jpg" alt="Recorrido gastronómico" id="imgTour3">
             </div>
             <div class="gallery-item">
-                <img src="img/tour4.jpg" alt="Vista panorámica desde un mirador">
+                <img src="img/tour4.jpg" alt="Vista panorámica desde un mirador" id="imgTour4">
             </div>
             <div class="gallery-item video">
                 <video controls>
                     <source src="video/tour.mp4" type="video/mp4">
-                    Tu navegador no soporta videos.
+                    <span id="videoFallback">Tu navegador no soporta videos.</span>
                 </video>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2025 Walking Tours CDMX - Todos los derechos reservados</p>
+        <p id="footerText">&copy; 2025 Walking Tours CDMX - Todos los derechos reservados</p>
     </footer>
-
+    <script defer src="js/lang.js"></script>
 </body>
 </html>

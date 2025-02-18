@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Walking Tours CDMX</title>
+    <title id="pageTitle">Contacto - Walking Tours CDMX</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/contact.css"> <!-- Estilos específicos -->
 </head>
@@ -30,33 +30,32 @@
         </nav>
     </header>
 
-
     <!-- Sección de contacto -->
     <section class="contact-container">
-        <h2>Contacto</h2>
-        <p>¿Tienes dudas o quieres reservar un tour? ¡Escríbenos!</p>
+        <h2 id="contactTitle">Contacto</h2>
+        <p id="contactDescription">¿Tienes dudas o quieres reservar un tour? ¡Escríbenos!</p>
 
         <div class="contact-content">
             <!-- Formulario de contacto -->
             <form action="#" method="POST">
-                <label for="name">Nombre:</label>
+                <label for="name" id="labelName">Nombre:</label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="email">Correo electrónico:</label>
+                <label for="email" id="labelEmail">Correo electrónico:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="message">Mensaje:</label>
+                <label for="message" id="labelMessage">Mensaje:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
 
-                <button type="submit">Enviar mensaje</button>
+                <button type="submit" id="submitButton">Enviar mensaje</button>
             </form>
 
             <!-- Datos de contacto -->
             <div class="contact-info">
-                <h3>Información de contacto</h3>
-                <p><strong>Email:</strong> tastetimetraveler@gmail.com</p>
-                <p><strong>Teléfono:</strong> +52 55 6469 9430</p>
-                <p><strong>Ubicación:</strong> Ciudad de México, CDMX</p>
+                <h3 id="contactInfoTitle">Información de contacto</h3>
+                <p><strong>Email:</strong> <span id="contactEmail">tastetimetraveler@gmail.com</span></p>
+                <p><strong id="contactPhoneLabel">Teléfono:</strong> <span id="contactPhone">+52 55 6469 9430</span></p>
+                <p><strong id="contactLocationLabel">Ubicación:</strong> <span id="contactLocation">Ciudad de México, CDMX</span></p>
 
                 <!-- Redes sociales -->
                 <div class="social-links">
@@ -70,8 +69,9 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Walking Tours CDMX - Todos los derechos reservados.</p>
+        <p id="footerText">&copy; 2025 Walking Tours CDMX - Todos los derechos reservados.</p>
     </footer>
 
+    <script defer src="js/lang.js"></script>
 </body>
 </html>
