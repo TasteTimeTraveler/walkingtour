@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     languageSelector.addEventListener("change", (event) => {
+        setLanguage(event.target.value); // Agregar cambio de idioma
         loadTours(event.target.value);
     });
 

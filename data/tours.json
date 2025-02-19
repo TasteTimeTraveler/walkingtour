@@ -1,8 +1,17 @@
 {
     "es": {
-        "toursTitle": "Tours - Walking Tours CDMX",
         "toursHeading": "Nuestros Tours",
-        "toursDescription": "Explora la Ciudad de México con nuestros tours guiados a pie.",
+        "siteTitle": "Walking Tours CDMX",
+        "toursTitle": "Nuestros Tours",
+        "toursDescription": "Elige tu experiencia y explora la Ciudad de México con guías locales.",
+        "tourPrice": "Precio",
+        "tourButton": "Más detalles",
+        "menuHome": "Inicio",
+        "menuTours": "Tours",
+        "menuGallery": "Galería",
+        "menuReviews": "Reseñas",
+        "menuPartners": "Empresas",
+        "menuContact": "Contacto",
         "tours": [
             {
                 "title": "Centro Histórico",
@@ -38,9 +47,18 @@
         "footerText": "© 2025 Walking Tours CDMX - Todos los derechos reservados"
     },
     "en": {
-        "toursTitle": "Tours - Walking Tours CDMX",
         "toursHeading": "Our Tours",
-        "toursDescription": "Explore Mexico City with our guided walking tours.",
+        "siteTitle": "Walking Tours CDMX",
+        "toursTitle": "Our Tours",
+        "toursDescription": "Choose your experience and explore Mexico City with local guides.",
+        "tourPrice": "Price",
+        "tourButton": "More details",
+        "menuHome": "Home",
+        "menuTours": "Tours",
+        "menuGallery": "Gallery",
+        "menuReviews": "Reviews",
+        "menuPartners": "Partners",
+        "menuContact": "Contact",
         "tours": [
             {
                 "title": "Historic Center",
