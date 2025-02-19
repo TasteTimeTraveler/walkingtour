@@ -2,22 +2,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const languageSelector = document.getElementById("languageSelector");
     const toursContainer = document.querySelector(".tours-grid");
 
-    // Función para cargar los tours desde el JSON
     function loadTours(lang) {
-        fetch("data/tours.json") // Asegúrate de que la ruta sea correcta
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! Status: ${response.status}`);
-                }
-                return response.json();
-            })
+        fetch("data/tours.json")
+            .then(response => response.json())
             .then(data => {
-                if (!data || !data[lang] || !Array.isArray(data[lang])) {
-                    throw new Error("Formato de JSON incorrecto o datos faltantes");
+                if (!data[lang] || !Array.isArray(data[lang].tours)) {
+                    throw new Error("Formato incorrecto o datos faltantes en el JSON.");
                 }
 
-                toursContainer.innerHTML = ""; // Limpiar contenido anterior
-                data[lang].forEach(tour => {
+                document.title = data[lang].toursTitle;
+                document.getElementById("toursHeading").textContent = data[lang].toursHeading;
+                document.getElementById("toursDescription").textContent = data[lang].toursDescription;
+                document.getElementById("footerText").textContent = data[lang].footerText;
+
+                toursContainer.innerHTML = "";
+                data[lang].tours.forEach(tour => {
                     const tourCard = document.createElement("div");
                     tourCard.classList.add("tour");
                     tourCard.innerHTML = `
@@ -31,11 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(error => console.error("Error al cargar los tours:", error.message));
     }
 
-    // Cambio de idioma
     languageSelector.addEventListener("change", (event) => {
         loadTours(event.target.value);
     });
 
-    // Cargar idioma predeterminado (Español)
-    loadTours("es");
+    loadTours("es"); // Idioma por defecto
 });
