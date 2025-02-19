@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const languageSelector = document.getElementById("languageSelector");
+    const storedLanguage = localStorage.getItem("selectedLanguage") || "es"; // Si no hay un idioma guardado, usa "es"
+    
+    languageSelector.value = storedLanguage; // Mantener la selección en el `<select>`
+    setLanguage(storedLanguage);
+    loadTours(storedLanguage);
 
     function setLanguage(lang) {
         fetch("data/lang.json")
@@ -42,18 +46,34 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             })
             .catch(error => console.error("Error al cargar las traducciones:", error));
-        
-        // Guardar idioma seleccionado
-        localStorage.setItem("selectedLanguage", lang);
     }
 
-    // Leer el idioma guardado y aplicarlo
-    const savedLanguage = localStorage.getItem("selectedLanguage") || "es";
-    languageSelector.value = savedLanguage;
-    setLanguage(savedLanguage);
+    function loadTours(lang) {
+        fetch("data/tours.json")
+            .then(response => response.json())
+            .then(data => {
+                if (!data[lang] || !Array.isArray(data[lang].tours)) {
+                    throw new Error("Formato incorrecto o datos faltantes en el JSON.");
+                }
 
-    // Cambiar idioma al seleccionar en el menú
-    languageSelector.addEventListener("change", function () {
-        setLanguage(this.value);
-    });
+                document.getElementById("toursHeading").textContent = data[lang].toursHeading;
+                document.getElementById("toursDescription").textContent = data[lang].toursDescription;
+                document.getElementById("footerText").textContent = data[lang].footerText;
+
+                const toursContainer = document.querySelector(".tours-grid");
+                toursContainer.innerHTML = "";
+                data[lang].tours.forEach(tour => {
+                    const tourCard = document.createElement("div");
+                    tourCard.classList.add("tour");
+                    tourCard.innerHTML = `
+                        <img src="${tour.img}" alt="${tour.title}">
+                        <h3>${tour.title}</h3>
+                        <p>${tour.description}</p>
+                    `;
+                    toursContainer.appendChild(tourCard);
+                });
+            })
+            .catch(error => console.error("Error al cargar los tours:", error.message));
+    }
 });
+
