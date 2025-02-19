@@ -6,23 +6,44 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(response => response.json())
             .then(data => {
                 if (data[lang]) {
-                    document.getElementById("siteTitle").textContent = data[lang].title;
-                    document.getElementById("toursTitle").textContent = data[lang].toursTitle;
-                    document.getElementById("toursDescription").textContent = data[lang].toursDescription;
-                    document.getElementById("tourPrice").textContent = data[lang].tourPrice;
-                    document.getElementById("tourButton").textContent = data[lang].tourButton;
+                    const translations = data[lang];
 
-                    // Cambiar textos del menú
-                    document.getElementById("menuHome").textContent = data[lang].menuHome;
-                    document.getElementById("menuTours").textContent = data[lang].menuTours;
-                    document.getElementById("menuGallery").textContent = data[lang].menuGallery;
-                    document.getElementById("menuReviews").textContent = data[lang].menuReviews;
-                    document.getElementById("menuPartners").textContent = data[lang].menuPartners;
-                    document.getElementById("menuContact").textContent = data[lang].menuContact;
+                    // Elementos que necesitan traducción
+                    const elements = {
+                        siteTitle: "title",
+                        heroTitle: "title",
+                        heroDescription: "description",
+                        heroButton: "buttonTours",
+                        menuHome: "menuHome",
+                        menuTours: "menuTours",
+                        menuGallery: "menuGallery",
+                        menuReviews: "menuReviews",
+                        menuPartners: "menuPartners",
+                        menuContact: "menuContact",
+                        highlightsTitle: "toursTitle",
+                        highlight1Title: "highlight1Title",
+                        highlight1Description: "highlight1Description",
+                        highlight2Title: "highlight2Title",
+                        highlight2Description: "highlight2Description",
+                        toursTitle: "toursTitle",
+                        toursDescription: "toursDescription",
+                        tourPrice: "tourPrice",
+                        tourButton: "tourButton",
+                        footerText: "footerText"
+                    };
+
+                    // Aplicar las traducciones si los elementos existen
+                    for (let id in elements) {
+                        const element = document.getElementById(id);
+                        if (element) {
+                            element.textContent = translations[elements[id]];
+                        }
+                    }
                 }
-            });
+            })
+            .catch(error => console.error("Error al cargar las traducciones:", error));
         
-        // Guardar la preferencia en localStorage
+        // Guardar idioma seleccionado
         localStorage.setItem("selectedLanguage", lang);
     }
 
