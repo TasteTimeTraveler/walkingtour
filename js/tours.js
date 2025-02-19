@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Función para cargar los tours desde el JSON
     function loadTours(lang) {
-        fetch("js/tours.json")
+        fetch("data/tours.json")
             .then(response => response.json())
             .then(data => {
                 if (data[lang]) {
