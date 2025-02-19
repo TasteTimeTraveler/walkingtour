@@ -31,7 +31,7 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-    background: url('../img/hero-image.jpg') center/cover no-repeat;
+    background: url('/img/galeria/TourCentro.jpg') center/cover no-repeat;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -54,90 +54,6 @@ nav ul li a {
     border-radius: 5px;
 }
 
-/* Estilos para la sección de Tours */
-.tours {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.tours h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #9C27B0;
-}
-
-.tour-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.tour {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    max-width: 300px;
-    text-align: center;
-}
-
-.tour img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.tour h3 {
-    font-size: 1.5rem;
-    margin: 10px 0;
-    color: #424242;
-}
-
-.tour p {
-    padding: 0 15px;
-    font-size: 1rem;
-    color: #607D8B;
-}
-
-.tour .btn {
-    display: inline-block;
-    background: #FFC107;
-    color: white;
-    padding: 10px 15px;
-    margin: 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.tour .btn:hover {
-    background: #FF9800;
-}
-
-/* Animación de entrada */
-.tour {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.tour.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Animación Fade In */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 body {
     font-family: Arial, sans-serif;
