@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="toursTitle">Tours | Walking Tours CDMX</title>
+    <title id="toursTitle">Tours - Walking Tours CDMX</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/tours.css">
-
+    <script defer src="js/tours.js"></script>
 </head>
 <body>
 
@@ -31,16 +31,34 @@
         </nav>
     </header>
 
-    <!-- Sección de tours -->
-    <main>
-        <h2 id="toursTitle">Explora Nuestros Tours</h2>
-        <p id="toursDescription">Elige tu experiencia y explora la Ciudad de México con guías locales.</p>
-        <div   id="toursContainer" class="tours-list"></div> <!-- Aquí se insertarán las tarjetas dinámicamente -->
-    </main>
+    <!-- Sección de Tours -->
+    <section class="tours-container">
+        <h1 id="toursHeading">Nuestros Tours</h1>
+        <p id="toursDescription">Explora la Ciudad de México con nuestros tours guiados a pie.</p>
+
+        <div class="tours-grid">
+            <div class="tour">
+                <img src="img/tour1.jpg" alt="Centro Histórico">
+                <h3 id="tour1Title">Centro Histórico</h3>
+                <p id="tour1Description">Descubre los monumentos más icónicos del Centro Histórico.</p>
+            </div>
+            <div class="tour">
+                <img src="img/tour2.jpg" alt="Chapultepec">
+                <h3 id="tour2Title">Bosque de Chapultepec</h3>
+                <p id="tour2Description">Un recorrido por el parque más grande de la ciudad.</p>
+            </div>
+            <div class="tour">
+                <img src="img/tour3.jpg" alt="Coyoacán">
+                <h3 id="tour3Title">Coyoacán</h3>
+                <p id="tour3Description">Explora la historia y cultura de Coyoacán.</p>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Walking Tours CDMX</p>
+        <p id="footerText">© 2025 Walking Tours CDMX - Todos los derechos reservados</p>
     </footer>
+
     <script src="js/lang.js"></script>
-    <script src="js/tours.js"></script>
 </body>
 </html>
