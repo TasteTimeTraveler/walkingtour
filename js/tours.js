@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Función para cargar los tours desde el JSON
     function loadTours(lang) {
-        fetch("toursData.json") // Asegúrate de que la ruta sea correcta
+        fetch("data/tours.json") // Asegúrate de que la ruta sea correcta
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
