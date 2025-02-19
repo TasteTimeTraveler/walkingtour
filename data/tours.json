@@ -7,32 +7,32 @@
             {
                 "title": "Centro Histórico",
                 "description": "Descubre los monumentos más icónicos del Centro Histórico.",
-                "img": "img/centro_historico.jpg"
+                "img": "../img/galeria/imagen1.jpg"
             },
             {
                 "title": "Bosque de Chapultepec",
                 "description": "Un recorrido por el parque más grande de la ciudad.",
-                "img": "img/chapultepec.jpg"
+                "img": "../img/galeria/imagen2.jpg"
             },
             {
                 "title": "Coyoacán",
                 "description": "Explora la historia y cultura de Coyoacán.",
-                "img": "img/coyoacan.jpg"
+                "img": "../img/galeria/imagen3.jpg"
             },
             {
                 "title": "Xochimilco",
                 "description": "Navega por los famosos canales de Xochimilco.",
-                "img": "img/xochimilco.jpg"
+                "img": "../img/galeria/imagen4.jpg"
             },
             {
                 "title": "Teotihuacán",
                 "description": "Visita las impresionantes pirámides de Teotihuacán.",
-                "img": "img/teotihuacan.jpg"
+                "img": "../img/galeria/imagen5.jpg"
             },
             {
                 "title": "Mercados de CDMX",
                 "description": "Descubre los mercados tradicionales de la ciudad.",
-                "img": "img/mercados.jpg"
+                "img": "../img/galeria/tianguischopo.jpeg"
             }
         ],
         "footerText": "© 2025 Walking Tours CDMX - Todos los derechos reservados"
@@ -45,32 +45,32 @@
             {
                 "title": "Historic Center",
                 "description": "Discover the most iconic monuments in the Historic Center.",
-                "img": "img/centro_historico.jpg"
+                "img": "../img/galeria/imagen1.jpg"
             },
             {
                 "title": "Chapultepec Forest",
                 "description": "A tour through the largest park in the city.",
-                "img": "img/chapultepec.jpg"
+                "img": "../img/galeria/imagen2.jpg"
             },
             {
                 "title": "Coyoacán",
                 "description": "Explore the history and culture of Coyoacán.",
-                "img": "img/coyoacan.jpg"
+                "img": "../img/galeria/imagen4.jpg"
             },
             {
                 "title": "Xochimilco",
                 "description": "Sail through the famous Xochimilco canals.",
-                "img": "img/xochimilco.jpg"
+                "img": "../img/galeria/imagen5.jpg"
             },
             {
                 "title": "Teotihuacán",
                 "description": "Visit the impressive Teotihuacán pyramids.",
-                "img": "img/teotihuacan.jpg"
+                "img": "../img/galeria/tianguischopo.jpeg"
             },
             {
                 "title": "CDMX Markets",
                 "description": "Discover the traditional markets of the city.",
-                "img": "img/mercados.jpg"
+                "img": "../img/galeria/TourCentro.jpg"
             }
         ],
         "footerText": "© 2025 Walking Tours CDMX - All rights reserved"
