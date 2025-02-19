@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
+    console.log("consumir json");
     fetch("data/tours.json")
         .then(response => response.json())
         .then(data => {
+            console.log(data);
             const toursContainer = document.getElementById("toursContainer");
 
             data.tours.forEach(tour => {
