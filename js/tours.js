@@ -2,6 +2,35 @@ document.addEventListener("DOMContentLoaded", () => {
     const languageSelector = document.getElementById("languageSelector");
     const toursContainer = document.querySelector(".tours-grid");
 
+    function setLanguage(lang) {
+        fetch("data/lang.json")
+            .then(response => response.json())
+            .then(data => {
+                if (data[lang]) {
+                    const elements = {
+                        siteTitle: document.getElementById("siteTitle"),
+                        toursTitle: document.getElementById("toursTitle"),
+                        toursDescription: document.getElementById("toursDescription"),
+                        tourPrice: document.getElementById("tourPrice"),
+                        tourButton: document.getElementById("tourButton"),
+                        menuHome: document.getElementById("menuHome"),
+                        menuTours: document.getElementById("menuTours"),
+                        menuGallery: document.getElementById("menuGallery"),
+                        menuReviews: document.getElementById("menuReviews"),
+                        menuPartners: document.getElementById("menuPartners"),
+                        menuContact: document.getElementById("menuContact")
+                    };
+    
+                    for (let key in elements) {
+                        if (elements[key]) {
+                            elements[key].textContent = data[lang][key];
+                        }
+                    }
+                }
+            })
+            .catch(error => console.error("Error loading translations:", error));
+    }
+
     function loadTours(lang) {
         fetch("data/tours.json")
             .then(response => response.json())
@@ -36,3 +65,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     loadTours("es"); // Idioma por defecto
 });
+
+
