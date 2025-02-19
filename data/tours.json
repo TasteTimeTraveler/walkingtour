@@ -1,26 +1,28 @@
-[
-    {
-        "name": "Tour por el Centro Histórico",
-        "description": "Explora los edificios más emblemáticos del corazón de la ciudad y su gastronomía.",
-        "image": "img/tour1.jpg",
-        "price": "950 MXN"
+
+{
+    "es": {
+        "toursTitle": "Tours - Walking Tours CDMX",
+        "toursHeading": "Nuestros Tours",
+        "toursDescription": "Explora la Ciudad de México con nuestros tours guiados a pie.",
+        "tour1Title": "Centro Histórico",
+        "tour1Description": "Descubre los monumentos más icónicos del Centro Histórico.",
+        "tour2Title": "Bosque de Chapultepec",
+        "tour2Description": "Un recorrido por el parque más grande de la ciudad.",
+        "tour3Title": "Coyoacán",
+        "tour3Description": "Explora la historia y cultura de Coyoacán.",
+        "footerText": "© 2025 Walking Tours CDMX - Todos los derechos reservados"
     },
-    {
-        "name": "Tour por Chapultepec",
-        "description": "Visita el castillo, el bosque y descubre su historia en un recorrido inolvidable.",
-        "image": "img/tour2.jpg",
-        "price": "1,100 MXN"
-    },
-    {
-        "name": "Tour a la Basílica de Guadalupe",
-        "description": "Un recorrido cultural y religioso para conocer uno de los santuarios más visitados del mundo.",
-        "image": "img/tour3.jpg",
-        "price": "850 MXN"
-    },
-    {
-        "name": "Tour a Tepotzotlán",
-        "description": "Escapa de la ciudad y conoce este mágico pueblo con su impresionante convento.",
-        "image": "img/tour4.jpg",
-        "price": "1,200 MXN"
+    "en": {
+        "toursTitle": "Tours - Walking Tours CDMX",
+        "toursHeading": "Our Tours",
+        "toursDescription": "Explore Mexico City with our guided walking tours.",
+        "tour1Title": "Historic Center",
+        "tour1Description": "Discover the most iconic monuments in the Historic Center.",
+        "tour2Title": "Chapultepec Forest",
+        "tour2Description": "A tour through the largest park in the city.",
+        "tour3Title": "Coyoacán",
+        "tour3Description": "Explore the history and culture of Coyoacán.",
+        "footerText": "© 2025 Walking Tours CDMX - All rights reserved"
     }
-]
+}
+

@@ -30,17 +30,7 @@
         "contactName": "Nombre",
         "contactEmail": "Correo Electrónico",
         "contactMessage": "Mensaje",
-        "contactButton": "Enviar",
-    
-        "toursHeading": "Nuestros Tours",
-        "tour1Title": "Centro Histórico",
-        "tour1Description": "Descubre los monumentos más icónicos del Centro Histórico.",
-        "tour2Title": "Bosque de Chapultepec",
-        "tour2Description": "Un recorrido por el parque más grande de la ciudad.",
-        "tour3Title": "Coyoacán",
-        "tour3Description": "Explora la historia y cultura de Coyoacán.",
-        "footerText": "© 2025 Walking Tours CDMX - Todos los derechos reservados"
-
+        "contactButton": "Enviar"
     },
     
     "en": {
@@ -74,15 +64,6 @@
         "contactName": "Name",
         "contactEmail": "Email",
         "contactMessage": "Message",
-        "contactButton": "Send",
-        "toursHeading": "Our Tours",
-        "tour1Title": "Historic Center",
-        "tour1Description": "Discover the most iconic monuments in the Historic Center.",
-        "tour2Title": "Chapultepec Forest",
-        "tour2Description": "A tour through the largest park in the city.",
-        "tour3Title": "Coyoacán",
-        "tour3Description": "Explore the history and culture of Coyoacán.",
-        "footerText": "© 2025 Walking Tours CDMX - All rights reserved"
+        "contactButton": "Send"
     }
 }
-

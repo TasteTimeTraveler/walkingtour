@@ -1,24 +1,35 @@
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("consumir json");
-    fetch("data/tours.json")
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-            const toursContainer = document.getElementById("toursContainer");
+document.addEventListener("DOMContentLoaded", () => {
+    const languageSelector = document.getElementById("languageSelector");
+    const toursContainer = document.querySelector(".tours-grid");
 
-            data.tours.forEach(tour => {
-                const tourCard = document.createElement("div");
-                tourCard.classList.add("tour-card");
+    // Función para cargar los tours desde el JSON
+    function loadTours(lang) {
+        fetch("js/toursData.json")
+            .then(response => response.json())
+            .then(data => {
+                if (data[lang]) {
+                    toursContainer.innerHTML = ""; // Limpiar contenido anterior
+                    data[lang].forEach(tour => {
+                        const tourCard = document.createElement("div");
+                        tourCard.classList.add("tour");
+                        tourCard.innerHTML = `
+                            <img src="${tour.img}" alt="${tour.title}">
+                            <h3>${tour.title}</h3>
+                            <p>${tour.description}</p>
+                        `;
+                        toursContainer.appendChild(tourCard);
+                    });
+                }
+            })
+            .catch(error => console.error("Error al cargar los tours:", error));
+    }
 
-                tourCard.innerHTML = `
-                    <img src="${tour.image}" alt="${tour.title}">
-                    <h3>${tour.title}</h3>
-                    <p><strong id="tourPrice">Precio:</strong> ${tour.price}</p>
-                    <button class="details-btn" id="tourButton">Más detalles</button>
-                `;
+    // Cambio de idioma
+    languageSelector.addEventListener("change", (event) => {
+        const selectedLang = event.target.value;
+        loadTours(selectedLang);
+    });
 
-                toursContainer.appendChild(tourCard);
-            });
-        })
-        .catch(error => console.error("Error al cargar los tours:", error));
+    // Cargar idioma predeterminado (Español)
+    loadTours("es");
 });
